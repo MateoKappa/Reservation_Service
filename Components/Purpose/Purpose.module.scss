@@ -1,0 +1,217 @@
+@keyframes clock_blocker {
+  from {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-color: rgba(155, 14, 14, 0.389);
+  }
+  to {
+    top: calc(50% - 300px);
+    margin-left: 8vw;
+    width: 40vw;
+    height: 600px;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.065);
+  }
+}
+@keyframes woman_blocker {
+  from {
+    background-color: rgba(255, 192, 203, 0.525);
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+  to {
+    bottom: calc(50% - 300px);
+    right: 8vw;
+    width: 40vw;
+    height: 600px;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.065);
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes opacityShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+div.purpose {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(250, 248, 248);
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 40%;
+  div.backgroundLeft {
+    animation-name: opacityShow;
+    animation-duration: 1s;
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+    background-color: rgb(142, 34, 34);
+    width: 25vw;
+    height: 40vh;
+    position: absolute;
+    bottom: 0;
+  }
+  div.backgroundRight {
+    animation-name: opacityShow;
+    animation-duration: 1s;
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+    background-color: rgb(162, 41, 41);
+    width: 25vw;
+    height: 40vh;
+    position: absolute;
+
+    right: 0;
+  }
+  div.clock {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    img {
+      border-top-right-radius: 50%;
+      border-bottom-right-radius: 50%;
+      width: 400px;
+      height: 400px;
+    }
+  }
+  div.woman {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    img {
+      border-top-left-radius: 50%;
+      border-bottom-left-radius: 50%;
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+    }
+  }
+  div.clockBlock {
+    animation-name: clock_blocker;
+    animation-duration: 1s;
+    top: calc(50% - 300px);
+    margin-left: 8vw;
+    width: 40vw;
+    height: 600px;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.065);
+
+    h3 {
+      text-align: center;
+      padding: 30px 0;
+      border-bottom: 1px solid rgba(200, 185, 185, 0.363);
+      background-color: rgba(255, 0, 0, 0.065);
+    }
+    div.problems {
+      height: calc(100% - 150px);
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+      margin-left: 10px;
+      p {
+        font-size: 25px;
+      }
+    }
+  }
+
+  div.womanBlock {
+    animation-name: woman_blocker;
+    animation-duration: 1s;
+    bottom: calc(50% - 300px);
+    right: 8vw;
+    width: 40vw;
+    height: 600px;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.065);
+    h3 {
+      text-align: center;
+      padding: 30px 0;
+      border-bottom: 1px solid rgba(200, 185, 185, 0.363);
+      background-color: rgba(255, 0, 0, 0.065);
+    }
+    div.problems {
+      height: calc(100% - 150px);
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+      margin-left: 10px;
+      p {
+        font-size: 25px;
+      }
+    }
+  }
+
+  div.header {
+    text-align: center;
+    font-size: 55px;
+    padding-top: 75px;
+    font-weight: 600;
+    z-index: 1;
+  }
+
+  h3 {
+    z-index: 1;
+    padding: 50px 400px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+  }
+  div.header[id="exit"],
+  h3[id="exit"],
+  Button[id="exit"] {
+    animation-name: opacity;
+    animation-duration: 0.5s;
+  }
+  div.header[id="exit_none"],
+  h3[id="exit_none"],
+  Button[id="exit_none"] {
+    display: none;
+  }
+  button {
+    cursor: pointer;
+    z-index: 100;
+  }
+  Button {
+    margin: auto;
+  }
+}

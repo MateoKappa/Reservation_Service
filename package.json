@@ -1,0 +1,20 @@
+{
+  "name": "reservationservice",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/font": "13.1.6",
+    "@nextui-org/react": "^1.0.0-beta.12",
+    "framer-motion": "^9.0.0",
+    "next": "13.1.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "^1.58.0"
+  }
+}
