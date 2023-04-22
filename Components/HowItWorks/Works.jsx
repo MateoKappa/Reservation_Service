@@ -26,154 +26,86 @@ function Works() {
           <div className={styles.search}>
             <i class="fa-regular fa-magnifying-glass"></i>
           </div>
-          {phonePage == 0 ? (
-            <div>
-              <div className={styles.topPicks}>
-                <p>Top Picks</p>
-                <div style={{ display: "flex" }}>
-                  <div className={styles.Item}>
-                    <img src="https://hellothessaloniki.gr/wp-content/uploads/2021/03/Prassein-Aloga-Blog-Post-4-images.jpg" />
+          <div>
+            <div className={styles.topPicks}>
+              <p>Top Picks</p>
+              <div style={{ display: "flex" }}>
+                <div className={styles.Item}>
+                  <img src="https://hellothessaloniki.gr/wp-content/uploads/2021/03/Prassein-Aloga-Blog-Post-4-images.jpg" />
+                  <h5>PRASSEIN ALOGA Restaurant</h5>
+                  <h6>
+                    <i className="fa-solid fa-location-dot"></i> Larissa, Greece
+                  </h6>
+                  <div className={styles.priceLike}>
+                    <p>20$</p>
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                </div>
+                <div className={styles.Item}>
+                  <img src="https://hellothessaloniki.gr/wp-content/uploads/2021/03/Monark-Blog-Post-4-images.jpg" />
+                  <h5>Monark Comfort Restaurant</h5>
+                  <h6>
+                    <i className="fa-solid fa-location-dot"></i> Larissa, Greece
+                  </h6>
+                  <div className={styles.priceLike}>
+                    <p>40$</p>
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.near}>
+              {" "}
+              <p>Near you</p>
+              <div className={styles.near_items}>
+                <div className={styles.item}>
+                  <img src="https://hellothessaloniki.gr/wp-content/uploads/2021/03/Prassein-Aloga-Blog-Post-4-images.jpg" />
+                  <div className={styles.details}>
                     <h5>PRASSEIN ALOGA Restaurant</h5>
                     <h6>
                       <i className="fa-solid fa-location-dot"></i> Larissa,
                       Greece
                     </h6>
-                    <div className={styles.priceLike}>
-                      <p>20$</p>
-                      <i class="fa-solid fa-heart"></i>
-                    </div>
+                    <p>20$</p>
                   </div>
-                  <div className={styles.Item}>
-                    <img src="https://hellothessaloniki.gr/wp-content/uploads/2021/03/Monark-Blog-Post-4-images.jpg" />
-                    <h5>Monark Comfort Restaurant</h5>
+                </div>
+                <div className={styles.item}>
+                  <img src="https://hellothessaloniki.gr/wp-content/uploads/2021/03/Monark-Blog-Post-4-images.jpg" />
+
+                  <div className={styles.details}>
+                    <h5>Monark Comfort Food Restaurant</h5>
                     <h6>
                       <i className="fa-solid fa-location-dot"></i> Larissa,
                       Greece
                     </h6>
-                    <div className={styles.priceLike}>
-                      <p>40$</p>
-                      <i class="fa-solid fa-heart"></i>
-                    </div>
+                    <p>40$</p>
                   </div>
                 </div>
-              </div>
-              <div className={styles.near}>
-                {" "}
-                <p>Near you</p>
-                <div className={styles.near_items}>
-                  <div className={styles.item}>
-                    <img src="https://hellothessaloniki.gr/wp-content/uploads/2021/03/Prassein-Aloga-Blog-Post-4-images.jpg" />
-                    <div className={styles.details}>
-                      <h5>PRASSEIN ALOGA Restaurant</h5>
-                      <h6>
-                        <i className="fa-solid fa-location-dot"></i> Larissa,
-                        Greece
-                      </h6>
-                      <p>20$</p>
-                    </div>
+                <div className={styles.item}>
+                  <img src="https://hellothessaloniki.gr/wp-content/uploads/2021/03/Floyd-Blog-Post-4-images.jpg" />
+                  <div className={styles.details}>
+                    <h5> Floyd Food Communityt</h5>
+                    <h6>
+                      <i className="fa-solid fa-location-dot"></i> Larissa,
+                      Greece
+                    </h6>
+                    <p>60$</p>
                   </div>
-                  <div className={styles.item}>
-                    <img src="https://hellothessaloniki.gr/wp-content/uploads/2021/03/Monark-Blog-Post-4-images.jpg" />
-
-                    <div className={styles.details}>
-                      <h5>Monark Comfort Food Restaurant</h5>
-                      <h6>
-                        <i className="fa-solid fa-location-dot"></i> Larissa,
-                        Greece
-                      </h6>
-                      <p>40$</p>
-                    </div>
-                  </div>
-                  <div className={styles.item}>
-                    <img src="https://hellothessaloniki.gr/wp-content/uploads/2021/03/Floyd-Blog-Post-4-images.jpg" />
-                    <div className={styles.details}>
-                      <h5> Floyd Food Communityt</h5>
-                      <h6>
-                        <i className="fa-solid fa-location-dot"></i> Larissa,
-                        Greece
-                      </h6>
-                      <p>60$</p>
-                    </div>
-                  </div>
-                  <div className={styles.item}>
-                    <img src="https://hellothessaloniki.gr/wp-content/uploads/2021/03/4-epoxes-Blog-Post-4-images.jpg" />
-                    <div className={styles.details}>
-                      <h5>Epohes Greek Restaurant</h5>
-                      <h6>
-                        <i className="fa-solid fa-location-dot"></i> Larissa,
-                        Greece
-                      </h6>
-                      <p>20$</p>
-                    </div>
+                </div>
+                <div className={styles.item}>
+                  <img src="https://hellothessaloniki.gr/wp-content/uploads/2021/03/4-epoxes-Blog-Post-4-images.jpg" />
+                  <div className={styles.details}>
+                    <h5>Epohes Greek Restaurant</h5>
+                    <h6>
+                      <i className="fa-solid fa-location-dot"></i> Larissa,
+                      Greece
+                    </h6>
+                    <p>20$</p>
                   </div>
                 </div>
               </div>
             </div>
-          ) : (
-            <div className={styles.likedPage}>
-              <div className={styles.tags}>
-                <p>
-                  Price <i class="fa-solid fa-chevron-down"></i>
-                </p>{" "}
-                <p>
-                  Time <i class="fa-solid fa-chevron-down"></i>
-                </p>{" "}
-                <p>
-                  Available <i class="fa-solid fa-chevron-down"></i>
-                </p>{" "}
-              </div>
-              <div className={styles.liked}>
-                <div className={styles.likedItem}>
-                  <div className={styles.text}>
-                    <img src="https://hellothessaloniki.gr/wp-content/uploads/2021/03/4-epoxes-Blog-Post-4-images.jpg" />{" "}
-                    <div className={styles.nameLikes}>
-                      <h5>Epohes Greek Restaurant</h5>
-                      <i className="fa-solid fa-heart"></i>
-                    </div>
-                    <div className={styles.locationMoney}>
-                      <h6>
-                        <i className="fa-solid fa-location-dot"></i> Larissa,
-                        Greece
-                      </h6>
-                      <p>20$</p>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.likedItem}>
-                  <div className={styles.text}>
-                    <img src="https://hellothessaloniki.gr/wp-content/uploads/2021/03/Prassein-Aloga-Blog-Post-4-images.jpg" />{" "}
-                    <div className={styles.nameLikes}>
-                      <h5>PRASSEIN ALOGA Restaurant</h5>
-                      <i className="fa-solid fa-heart"></i>
-                    </div>
-                    <div className={styles.locationMoney}>
-                      <h6>
-                        <i className="fa-solid fa-location-dot"></i> Larissa,
-                        Greece
-                      </h6>
-                      <p>40$</p>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.likedItem}>
-                  <div className={styles.text}>
-                    <img src="https://hellothessaloniki.gr/wp-content/uploads/2021/03/Monark-Blog-Post-4-images.jpg" />{" "}
-                    <div className={styles.nameLikes}>
-                      <h5>Epohes Greek Restaurant</h5>
-                      <i className="fa-solid fa-heart"></i>
-                    </div>
-                    <div className={styles.locationMoney}>
-                      <h6>
-                        <i className="fa-solid fa-location-dot"></i> Larissa,
-                        Greece
-                      </h6>
-                      <p>20$</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
+          </div>
           <div className={styles.navbar}>
             <i id="picked" className="fa-solid fa-compass"></i>
 
